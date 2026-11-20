@@ -1,0 +1,23 @@
+# Dependencies / build output
+node_modules/
+dist/
+build/
+.env
+.env.*
+
+# GRID data — NEVER committed (hackathon-only licensed data).
+# Raw/extracted samples and derived GRID files stay out of the repo;
+# only small aggregates (static JSON) are published.
+*.zst
+*.jsonl
+*.parquet
+*.sqlite
+*.duckdb
+stl-hackathon-2026-grid-starter/
+data-samples/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.log
