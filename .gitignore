@@ -21,3 +21,8 @@ data-samples/
 .idea/
 .vscode/
 *.log
+
+# Local Python venvs / pip tmp (calibration + ETL tooling)
+.venv-calib/
+.venv/
+.pip-tmp/
