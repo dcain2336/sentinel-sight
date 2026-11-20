@@ -10,3 +10,10 @@ Hard rules: GRID data NEVER committed (public or private); $0 spend; no false at
 - Spawned in parallel: Agent A (GitHub repo + license + .gitignore + README skeleton), Agent B (GRID sparse checkout + series counts + one-series stream + ability-supplement join).
 - Agent C (maps + calibration + first heatmap render) to spawn once B delivers sample cast positions.
 - Open item (needs parent/browser task, NOT a generic subagent): JetBrains account creation (arc.agent.ops@gmail.com) + PyCharm Community + Air plugin + Junie Lite free-path verification. Sandbox has no desktop IDE; record outcome in docs/tooling-log.md when done.
+
+## 2026-11-19 ~21:31 EST — M1 repo created (Agent A)
+- Repo: https://github.com/dcain2336/sentinel-sight (public, created 2026-11-20 02:31 UTC / 2026-11-19 21:31 EST, default branch main).
+- Initial commit 2480e9a pushed to main: LICENSE (MIT, © 2026 David Scott Cain), .gitignore (GRID block: *.zst/*.jsonl/*.parquet/*.sqlite/*.duckdb, stl-hackathon-2026-grid-starter/, data-samples/, plus node_modules/, dist/, .env), README.md skeleton, scripts/check-push-clean.sh (executable), ENTRY-BRIEF.md, BUILD-PLAN.md, BUILD-LOG.md.
+- Push-clean check: PASSED (no GRID data files tracked) before push.
+- Push verification: api.github.com/repos/dcain2336/sentinel-sight confirms public, default_branch main, pushed_at 2026-11-20T02:31:32Z; tree lists all 7 files + scripts/check-push-clean.sh.
+- Second commit (this log entry) pushed to main.
