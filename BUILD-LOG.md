@@ -66,7 +66,7 @@ Hard rules: GRID data NEVER committed (public or private); $0 spend; no false at
 - **First heatmap — DONE:** `docs/calibration/ascent-heatmap-m1.png` — 890 Ascent casts, 500 cm bins (28×28 grid, ~35.8 px/cell), 209 non-empty cells, hottest cell 24 casts (B-site area). Cast positions only, not landing locations.
 - **Environment note:** system matplotlib 3.6.3 is broken against user-site numpy 2.5.4 (compiled for numpy 1.x) — built an isolated venv `.venv-calib/` (matplotlib 3.11.2, numpy 2.5.5, pillow 13.0.0; `pip install` with TMPDIR under the work dir). `.venv-calib/` + `.pip-tmp/` added to `.gitignore`. $0 spent.
 - **Script:** `scripts/calibrate_maps.py` (re-fetches API, re-verifies, re-renders both figures, rewrites `calibration_results.json`). Full note: `docs/calibration/README.md`.
-- **Committed + pushed:** map PNGs, `docs/calibration/*`, `scripts/calibrate_maps.py`, Agent B's `m1_stream.py`, this log entry. Push-clean check PASSED; verified via api.github.com file listing (see below).
+- **Committed + pushed:** map PNGs, `docs/calibration/*`, `scripts/calibrate_maps.py`, Agent B's `m1_stream.py`, this log entry — commit `8ad5ffa` (12 files). Push-clean check PASSED before push. Push verified via api.github.com: tree sha `8ad5ffa6a6527c7637fc8361a7c388be4128b05f`, 23 files, **zero GRID data files**, `pushed_at 2026-11-20T03:15:09Z`, public, main.
 - **No blockers.** M1 exit criteria met: repo exists, 1 real heatmap on screen from real GRID data, calibration verified.
 
 ## 2026-11-19 ~21:31 EST — M1 repo created (Agent A)
